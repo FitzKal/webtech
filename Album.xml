@@ -1,0 +1,18 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE album SYSTEM "album.dtd">
+<album> 
+    <artist>Steven Wilson: </artist>
+    <title>Hand. Cannot. Erase.</title>
+    <year>2015</year>
+    <track-list>
+    <track>
+        <number>1</number>
+        <title>First Regret</title>
+        <length> 2:01 </length>
+    </track>
+     <track>
+        <number>2</number>
+        <title> 3 Years Older</title>
+        <length> 10:18 </length>
+    </track>
+</album>
