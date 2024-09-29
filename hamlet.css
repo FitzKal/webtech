@@ -1,0 +1,81 @@
+*{
+    display: block;
+    /*border: 2px solid red;*/
+}
+
+play{
+    background-color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 1em;
+    background-color: #4a412a;
+    counter-reset: line_counter;
+}
+
+author,title{
+    font-variant: small-caps;
+    text-align: center;
+}
+
+author, play > title{
+    font-weight: bold;
+    letter-spacing: 0.1m;
+}
+
+play > title{/* kacsacsor eseten egybol a legelso gyermekere van hatassal csak*/
+    font-size: xx-large;
+    margin-top: 1rem;
+}
+
+scene > title{
+    background-color: blue;
+    color: white;
+    font-size: large;
+    box-shadow: 0.25em 0.25em 0.5em #39FF14;
+    padding: 0.5em;
+}
+
+act {
+    border-top: medium solid black;
+}
+
+stagedir{
+    color: gray;
+    font-style: italic;
+}
+
+stagedir::before{
+    content: "(";
+}
+
+stagedir::after{
+    content: ")";
+}
+
+speech > line, speech > stagedir {
+    margin-left: 1em;
+}
+
+scene > stagedir{ 
+    text-align: center;
+}
+
+speaker{
+   font-weight: bold;
+    text-transform: uppercase;
+}
+
+line:hover {
+
+    background-color: #FF00FF;
+    color: #AF05FF
+}
+
+speech >line::before{
+    content: "("counter(line_counter)")";
+    counter-increment: line_counter;
+}
+
+speech > line:hover:before{
+    font-size: xx-large;
+    
+}
