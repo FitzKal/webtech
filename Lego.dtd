@@ -1,0 +1,14 @@
+<!ELEMENT collections (szet*)>
+<!ATTLIST collections name CDATA #REQUIRED>
+<!ELEMENT szet (name,code,pieces*,price+)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT code (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ATTLIST price currency CDATA #REQUIRED symbols CDATA #IMPLIED>
+<!ELEMENT pieces (counter,piece*,minifig*)>
+<!ELEMENT counter (#PCDATA)>
+<!ATTLIST counter minifig-count CDATA #REQUIRED>
+<!ELEMENT piece (#PCDATA)>
+<!ATTLIST piece code CDATA #REQUIRED>
+<!ELEMENT minifig (#PCDATA)>
+<!ATTLIST minifig code CDATA #REQUIRED>

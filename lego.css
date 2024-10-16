@@ -1,0 +1,96 @@
+*{
+    display: block;
+
+}
+
+collections::before{
+    content: attr(name)  "'s collection";
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+   font-weight: bold;
+   counter-reset: line_counter;
+}
+
+collections{
+    background-color: lightblue;
+    text-align: center;
+    padding-top: 1em;
+    
+}
+
+szet{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin-bottom: 2em;
+    margin-top: 1em;
+}
+
+szet::before{
+    content :""counter(line_counter)".";
+    counter-increment: line_counter;
+    padding-right: 0.5em;
+}
+
+code,name,counter,piece,minifig,price,szet{
+    background-color: lightseagreen;
+}
+code,name{
+    display: inline-block;
+    background-color: lightseagreen;
+}
+counter,piece{
+    background-color: rgb(35, 140, 182);
+}
+price::before{
+    content: "Price in " attr(currency) ": ";
+}
+
+price::after{
+    content:" " attr(symbols);
+    
+}
+price{
+    font-weight: bold;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+pieces {
+    border: solid thin black;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+    padding-top: 0.5em;
+    background-color: rgb(35, 140, 182);
+    
+}
+
+piece + minifig{
+    font-weight: bold;
+}
+
+minifig{
+    background-color: darkcyan;
+}
+
+piece:hover{
+    background-color: rgb(255, 0, 221);
+}
+
+minifig:hover{
+    background-color: rgb(255, 0, 221);
+}
+
+price:is([currency="HUF"]) {
+    background-color: red;
+}
+
+counter::after{
+    content: " pieces, minifigures: " attr(minifig-count);
+}
+
+pieces + piece{
+    margin-top: 0.5em;
+}

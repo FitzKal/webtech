@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="lego.css" type="text/css"?>
+<!DOCTYPE collections SYSTEM "Lego.dtd">
+
+<collections name="Vesa Bence">
+    <szet>
+        <name>Buckkeep</name>
+        <code>123-2</code>
+        <pieces>
+            <counter minifig-count="5">600</counter>
+            <piece code="4"> 2x2 Block</piece>
+            <piece code="1">Buckeep Castle 1x1</piece>
+            <piece code="44">Portal Stone 2x2</piece>   
+            <minifig code="20">Fitzchivalry Farseer</minifig>
+            <minifig code="23">Nighteyes</minifig>
+            <minifig code="12">Verity Farseer</minifig>
+            <minifig code="123">Queen Kettricken</minifig>
+            <minifig code="152">Beloved(Fool)</minifig>
+        </pieces>
+        <price currency="HUF" symbols="Ft">25000</price>
+        <price currency="USD" symbols="$">2500</price>
+    </szet>
+    <szet>
+        <name>Stormlighy Archive</name>
+        <code>16-6</code>
+        <pieces>
+            <counter minifig-count="3">500</counter>
+            <piece code="12">Urithuru 2x2</piece>
+            <piece code="1">Kholinar castle 1x1</piece>
+            <piece code="15">Shattered plains 12x12</piece>
+            <minifig code="4">Kaladin Stormblessed</minifig>
+            <minifig code="3">Shallan Davar</minifig>
+            <minifig code="2">Dalinar Kholin</minifig>
+        </pieces>
+        <price currency="USD" symbols="$">1600</price>
+        <price currency="Marks" symbols="$">5600</price>
+    </szet>
+    
+</collections>
