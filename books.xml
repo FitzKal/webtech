@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="books.css" type="text/css"?>
+<!DOCTYPE collections SYSTEM "books.dtd">
+
+<collections name="Vesa Bence">
+ <szet>
+    <name>Wheel of time</name>
+    <code>323-2</code>
+    <pieces>
+        <counter minifig-counter="3">350</counter>
+        <piece code="1.5">Callandor</piece>
+        <minifig code="1">Rand Al'Thor</minifig>
+        <piece code="2.5">Ashandarei</piece>
+        <piece code="3.5">Mahalenir</piece>
+        <minifig code="2">Matrim Cauthon</minifig>
+        <minifig code="3">Perrin Aibara</minifig>
+    </pieces>
+    <price currency="HUF" symbol="Ft">15000</price>
+    <price currency="USD" symbol="$">500</price>
+ </szet>
+
+<szet>
+    <name>Liveship Traders</name>
+    <code>259-5</code>
+    <pieces>
+        <counter minifig-counter="3">250</counter>
+        <piece code="65">Paragon</piece>
+        <piece code="23">Vivacia</piece>
+        <minifig code="2">Wintrow Vestrit</minifig>
+        <minifig code="21">Kennit Ludlock</minifig>
+        <minifig code="341">Althea Vestrit</minifig>
+    </pieces>
+    <price currency="RON" symbol="RON">2500</price>
+    <price currency="USD" symbol="$">400</price>
+</szet>
+</collections>

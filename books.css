@@ -1,0 +1,96 @@
+*{
+    display: block;
+}
+
+collections::before{
+    content: attr(name) "' collection";
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3em;
+    counter-reset: line_counter;
+}
+
+collections{
+    text-align: center;
+    padding-top: 2em;
+    background-color: grey;
+    margin-bottom: 0.5em;
+}
+
+name,code{
+    display: inline-block;
+    
+}
+
+counter::before{
+    content: "pieces: ";
+}
+
+counter::after{
+    content: " from this minifigs: " attr(minifig-counter);
+}
+
+szet{
+    background-color: yellow;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding-top: 0.5em;
+}
+
+szet::before{
+    content:""counter(line_counter)".";
+    counter-increment: line_counter;
+}
+
+
+pieces{
+    border: solid thin black;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+    padding-top: 0.5em;
+    background-color: gold;
+    border-radius: 0.5em;
+}
+
+price::before{
+    content: "Price in: " attr(currency) " ";
+
+}
+
+price::after{
+    content: attr(symbol);
+}
+
+price:is([currency = HUF]){
+    background-color: red;
+}
+
+price{
+    font-weight: bold;
+}
+
+piece + minifig{
+    font-weight:bold;
+}
+
+minifig{
+    background-color: orange;
+}
+
+piece:hover{
+    background-color: forestgreen;
+}
+
+minifig:hover{
+    background-color: forestgreen;
+}
+
+piece,counter{
+    background-color: gold;
+}
+
+name::after{
+    content:": ";
+
+}
